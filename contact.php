@@ -19,7 +19,7 @@ $headers = "From: noreply@bnasmarine.com\r\nReply-To: $email\r\n";
 
 // Save to log
 $logfile = __DIR__.'/contact_log.txt';
-$entry = date('Y-m-d H:i:s')." | $name | $email | $phone | $service | ".str_replace(array(\"\\r\",\"\\n\"),' ',$message).\"\\n\";
+$entry = date('Y-m-d H:i:s')." | $name | $email | $phone | $service | ".str_replace(array("\r","\n"), ' ', $message)."\n";
 file_put_contents($logfile, $entry, FILE_APPEND);
 
 // Try mail()
