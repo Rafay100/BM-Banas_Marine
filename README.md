@@ -18,3 +18,4 @@ Static website for Banas Marine: services, about, and contact pages.
 2. For GitHub Pages:
    - Use the `main` branch and set Pages source to root.
    - Note: PHP (`contact.php`) will not run on GitHub Pages; host on a server with PHP if you need the form. 
+"# Binas_Marine" 
